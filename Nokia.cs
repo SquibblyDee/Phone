@@ -5,18 +5,21 @@ public class Nokia : Phone, IRingable
         : base(versionNumber, batteryPercentage, carrier, ringTone) {}
         public string Ring() 
         {
-            string returnString = this.ringTone;
+            string returnString = $"... {this.ringTone} ...";
             return returnString;
         }
         public string Unlock() 
         {
-            string stuff = "stuff";
-            return stuff;
+            string returnString = $"Nokia {this.versionNumber} unlocked with passcode";
+            return returnString;
         }
         public override void DisplayInfo() 
         {
-            Console.WriteLine("##################################");
-            Console.WriteLine("");
-            Console.WriteLine("##################################");        
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$");
+            Console.WriteLine($"Nokia {this.versionNumber}");
+            Console.WriteLine($"Battery Percentage: {this.batteryPercentage}");
+            Console.WriteLine($"Carrier: {this.carrier}");
+            Console.WriteLine($"Ring Tone: {this.ringTone}");
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$\n");        
         }
 }
