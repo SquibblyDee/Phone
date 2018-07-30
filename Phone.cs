@@ -13,8 +13,7 @@
                 // abstract method. This method will be implemented by the subclasses
                 public abstract void DisplayInfo();
                 
-                // public getters and setters removed for brevity. Please implement them yourself
-                
+                ////These gets grabs the values from our private variables and assigns them to a similarly named public vairable.
                 public string versionNumber
                 {
                     get => _versionNumber;
